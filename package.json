@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/KingSplatt/ElectronStilo/issues"
   },
-  "homepage": "https://github.com/KingSplatt/ElectronStilo#readme"
+  "homepage": "https://github.com/KingSplatt/ElectronStilo#readme",
+  "dependencies": {
+    "electron": "^33.2.1"
+  }
 }

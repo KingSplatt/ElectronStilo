@@ -13,7 +13,7 @@ function createWindow() {
     },
   });
 
-  win.loadURL('http://localhost:5173'); // URL for Vite dev server
+  win.loadURL('http://localhost:5173/'); // URL for Vite dev server
 }
 
 app.on('ready', createWindow);

@@ -4,8 +4,12 @@
   "description": "Aplicación hosteada de manera local para una tienda de boutique PDV",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "start:electron": "electron .",
+    "start:all": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\" \"npm run start:electron\"",
+    "build:frontend": "cd frontend && npm run build",
+    "build:app": "electron-builder"
   },
   "repository": {
     "type": "git",
@@ -19,7 +23,9 @@
     "url": "https://github.com/KingSplatt/ElectronStilo/issues"
   },
   "homepage": "https://github.com/KingSplatt/ElectronStilo#readme",
-  "dependencies": {
-    "electron": "^33.2.1"
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "electron": "^33.2.1",
+    "electron-builder": "^25.1.8"
   }
 }

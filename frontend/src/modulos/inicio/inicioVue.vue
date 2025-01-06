@@ -1,6 +1,8 @@
 <template>
-    <div>
-
+    <div class="contenedor">
+        <form @submit.prevent="" class="formulario">
+            <h2></h2>
+        </form>
     </div>
 </template>
 
